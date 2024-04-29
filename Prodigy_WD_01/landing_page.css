@@ -1,0 +1,40 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center align the menu items */
+  z-index: 1000;
+}
+
+.nav-item {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px; /* Increase font size */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.content {
+  height: 1500px; /* Example content to create scroll */
+}
+
+/* Styles for when hovering over menu items */
+.nav-item:hover {
+  color: lightblue; /* Change font color on hover */
+}
