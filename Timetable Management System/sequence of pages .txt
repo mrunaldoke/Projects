@@ -1,0 +1,6 @@
+sequence of pages 
+main
+ |
+for admin log(genearte_timetable.php -> display_timetable.php)
+    |
+for student and facutlu after login only display_timetable.php

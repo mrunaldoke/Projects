@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    background: url('login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px; /* Adjust maximum width as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-options, #student-login, #admin-login, #faculty-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:last-child {
+    margin-bottom: 0;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div id="main-holder">
+    <h1>Login</h1>
+    <h4>(Choose from the below options)</h4>
+    <button id="student-btn">Student</button>
+    <button id="admin-btn">Admin</button>
+    <button id="faculty-btn">Faculty</button>
+</div>
+
+<script>
+    document.getElementById('student-btn').addEventListener('click', function() {
+        window.location.href = 'student-login.html';
+    });
+
+    document.getElementById('admin-btn').addEventListener('click', function() {
+        window.location.href = 'admin-login.html';
+    });
+
+    document.getElementById('faculty-btn').addEventListener('click', function() {
+        window.location.href = 'faculty-login.html';
+    });
+</script>
+</body>
+</html>
